@@ -1,0 +1,429 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tercera Aplicación</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/tema1-app3.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/> 
+<!--grupo JavaScript-->
+
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/ss.jpg','imagenes/contam.jpg','imagenes/Consecuencias2.jpg','imagenes/consecuencias4.jpg','imagenes/medidas2.jpg','imagenes/medidas4.jpg')">
+
+<div data-role="page" id="Principal" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>Contaminación</h1>
+</div>
+<div>
+<ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+<li class="ui-fisrt-child ui-last-child">
+<a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Definición</h2>
+<p>¿Qué es la Contaminación?</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Tipos de Contaminación</h2>
+<p>Muestra los diferentes tipos de contaminación</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Consecuencias de la Contaminación</h2>
+<p>Muestra las consecuencias de la contaminación</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Reciclaje</h2>
+<p>Se muestra lo que se puede reciclar</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Medidas Preventivas</h2>
+<p>Se muestran medidas preventivas sobre la contaminación</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Contaminación en mi Entorno</h2>
+<p>Propuestas</p>
+</a>
+</li>
+</ul>
+</ul>
+</div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+<img src="imagenes/Logo.ico" width="46" height="46">
+</div>
+<div>
+<h4> Aplicacion Tres </h4>
+<h4>Carranza Sanchez Natalia</h4
+></div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>Definición  </h1>
+
+</div>
+<div data-role="content" align="left">
+<div>
+<h2>Es la presencia en el ambiente de cualquier agente (físico, químico o biológico) o bien de una combinación de varios agentes en lugares, formas y concentraciones tales que sean o puedan ser nocivos para la salud, la seguridad o para el bienestar de la población, o bien, que puedan ser perjudiciales para la vida vegetal o animal, o impidan el uso normal de las propiedades y lugares de recreación y goce de los mismos.
+
+</h2>
+</div>
+</div>
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Contaminación</h1>
+<div>
+<p>Contaminación </p>
+<br>
+</div>
+<div><img src="imagenes/Contaminacion.jpg" width="25%" alt="Teléfono Celular"></div>
+</div>
+</div>
+
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Contaminación</h1>
+<div>
+<p>Contaminación </p>
+<br>
+</div>
+<div><img src="imagenes/Consecuencias2.jpg" width="25%" alt="Teléfono Celular"></div>
+</div>
+</div>
+
+
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4>Aplicacion Tres, NCS</h4>
+</div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>Tipos de Contaminación </h1>
+</div>
+<div data-role="content" align="left">
+<div>
+<h2><p>Contaminación del agua</p> </h2> 
+<p> Contaminación del agua: es la incorporación al agua de materias extrañas, como microorganismos, productos químicos, residuos industriales, y de otros tipos o aguas residuales. Estas materias deterioran la calidad del agua y la hacen inútil para los usos pretendidos. </p>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Contaminacióna</h1>
+<div>
+<p>Contaminación </p>
+<br>
+</div>
+<div><img src="imagenes/ContaminacionA2.jpg" width="25%" alt="Teléfono Celular"></div>
+</div>
+</div>
+
+
+<p>Contaminación del suelo</p>
+
+<p> Contaminación del suelo: es la incorporación al suelo de materias extrañas, como basura, desechos tóxicos, productos químicos, y desechos industriales. La contaminación del suelo produce un desequilibrio físico, químico y biológico que afecta negativamente las plantas, animales y humanos. </p>
+<p>Contaminación del aire</p>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Contaminacióna</h1>
+<div>
+<p>Contaminación </p>
+<br>
+</div>
+<div><img src="imagenes/ContaminacionS.jpg" width="25%" alt="Teléfono Celular"></div>
+</div>
+</div>
+
+<p> Contaminación del aire: es la adición dañina a la atmósfera de gases tóxicos, CO, u otros que afectan el normal desarrollo de plantas, animales y que afectan negativamente la salud de los humanos </p>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Contaminación</h1>
+<div>
+<p>Contaminación </p>
+<br>
+</div>
+<div><img src="imagenes/ContaminacionA1.jpg" width="25%" alt="Teléfono Celular"></div>
+</div>
+</div>
+   
+<p>Contaminación química</p>
+<p> Contaminación química: refiere a cualquiera de las comentadas en los apartados anteriores, en las que un determinado compuesto químico se introduce en el medio.</p>
+
+
+<p>Contaminación radiactiva</p>
+<p> Contaminación radiactiva: es aquella derivada de la dispersión de materiales radiactivos, como el uranio enriquecido, usados en instalaciones médicas o de investigación, reactores nucleares de centrales energéticas, munición blindada con metal aleado con uranio, submarinos, satélites artificiales, etc., y que se produce por un accidente (como el accidente de Chernóbil), por el uso ó por la disposición final deliberada de los residuos  </p>
+
+<p>Contaminación térmica</p>
+<p> Contaminación térmica: refiere a la emisión de fluidos a elevada temperatura; se puede producir en cursos de agua.  </p>
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Contaminación</h1>
+<div>
+<p>Contaminación </p>
+<br>
+</div>
+<div><img src="imagenes/ContaminacionT.jpg" width="25%" alt="Teléfono Celular"></div>
+</div>
+</div>
+
+
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4> Aplicacion Tres, NCS</h4>
+</div>
+</div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>Consecuencias de la contaminación</h1>
+    </div>
+    <div data-role="content" align="left">
+      <div>
+         <h2>La contaminación ambiental deteriora cada vez mas a nuestro planeta y a nosotros mismos pues según investigaciones al respirar el aire contaminado esto afecta nuestra salud cardiovascular </h2>
+<p>Problemas para la salud: la contaminación hace que las personas estemos cada vez más expuestas a padecer problemas cardiovasculares, con el grave peligro que esto entraña para nuestra salud y vida. </p>
+<p>Debilitamiento de la capa de ozono: la capa de ozono es la que nos protege de los rayos del Sol, los cuales pueden llegar a ser mortíferos sin esta capa. la consecuencia de este debilitamiento es que cada vez nos protege menos y, por ende, cada vez tenemos una mayor temperatura en el planeta. Esto no solo hace que cada vez haya más zonas desiertas en las que es imposible vivir, sino que también hace que el hielo en los polos se deshaga y mueran muchas especies por ello. No hace falta mencionar que esto hace subir indudablemente el nivel del mar y que, de seguir así, muchas ciudades costeras se verán arrasadas, quedándose sin playas y sin zona costera.</p>
+</p>La contaminación afecta al suelo y al agua: la contaminación al medio ambiente afecta al agua y al suelo, lo que hace que cada vez haya más especies en peligro de extinción. El agua no es potable en una gran cantidad de sitios y el suelo para la siembre no tiene los nutrientes necesarios, lo que hace que cada vez se pueda cultivar menos y que el número de cosechas para nuestro sustento sea cada vez menor.</p>
+<p>La contaminación afecta al clima: seguro que ya te has dado cuenta que los inviernos pueden ser mucho más fríos o que los veranos son mucho más calurosos, a la vez que seguro te has dado cuenta que las estaciones como el invierno y el verano pueden ser más largas y que las de temperaturas medias, son cada vez más cortas. Todos estos cambios y los fenómenos que no se habían visto desde  hace mucho tiempo o incluso nunca se habían visto son causados por la contaminación. </p>
+</div>
+
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Contaminación</h1>
+<div>
+<p>Contaminación </p>
+<br>
+</div>
+<div> <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('consecuencias','','imagenes/Consecuencias2.jpg',1)"><img src="imagenes/consecuencias1.jpg" width="25%" id="consecuencias"></a></div>
+</div>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Contaminación</h1>
+<div>
+<p>Contaminación </p>
+<br>
+</div>
+<div><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('contaminacion1','','imagenes/consecuencias4.jpg',1)"><img src="imagenes/consecuencias3.jpg" width="240" height="164" id="contaminacion1"></a></div>
+</div>
+</div>
+
+
+       </div>
+      <div data-role="footer" data-theme="a" data-position="fixed">
+        <h4>Aplicacion Tres, NCS</h4>
+        </div>
+        </div>
+        
+        
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>Reciclaje</h1>
+    </div>
+    <div data-role="content" align="left">
+      <div>
+        <h2> Reciclaje</h2>
+<p> El reciclaje es un proceso cuyo objetivo es convertir desechos en nuevos productos o en materia para su posterior utilización. </p>
+
+<p>Gracias al reciclaje se previene el desuso de materiales potencialmente útiles, se reduce el consumo de nueva materia prima, además de reducir el uso de energía, la contaminación del aire (a través de la incineración) y del agua (a través de los vertederos), así como también disminuir las emisiones de gases de efecto invernadero en comparación con la producción de plásticos. </p>
+
+<P> El reciclaje es un componente clave en la reducción de desechos contemporáneos y es el tercer componente de las 3R (“Reducir, Reciclar, Reutilizar”). </p>
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Contaminación</h1>
+<div>
+<p>Contaminación </p>
+<br>
+</div>
+<div><img src="imagenes/Reciclaje2.jpg" width="25%" alt="Teléfono Celular"></div>
+</div>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Contaminación</h1>
+<div>
+<p>Contaminación </p>
+<br>
+</div>
+<div><img src="imagenes/Reciclaje1.jpg" width="25%" alt="Teléfono Celular"></div>
+</div>
+</div>
+
+
+        </div>
+      </div>
+      <div data-role="footer" data-theme="a" data-position="fixed">
+           <h4>Aplicacion Tres, NCS</h4>
+      </div>
+      </div>
+      
+      
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+      <h1>Medidas Preventivas para combatir la contaminación </h1>
+    </div>
+    <div data-role="content" align="left">
+      <div>
+        <h2>Medidas para evitar la Contaminación Ambiental: </h2>
+<p> Evita quemar basura y llantas, así como el uso de cohetes artificiales </p>
+
+<p> Evita comprar artículos desechables y plásticos que no son biodegradables. </p>
+
+<p> Recicla la basura </p> 
+
+<p> No arrojes basura en la calle, bosques y parques, envuélvela o tápala bien en la casa </p>
+
+<p> Usa racionalmente los plaguicidas </p>
+
+<p> Cuida los bosques al no provocar incendios ni destruir las zonas verdes de la ciudad </p> 
+
+<p> Evita el uso de pinturas, aceites y solventes en días de alta concentración de ozono. </p>
+<p> Reduce el consumo de electricidad, lo cual contribuirá a disminuir las emanaciones de contaminantes y partículas.</p>
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Contaminación</h1>
+<div>
+<p>Contaminación </p>
+<br>
+</div>
+<div><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('medidas','','imagenes/medidas2.jpg',1)"><img src="imagenes/medidas1.jpg" width="25%"  id="medidas"></a></div>
+</div>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Contaminación</h1>
+<div>
+<p>Contaminación </p>
+<br>
+</div>
+<div><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('medidas2','','imagenes/medidas4.jpg',1)"><img src="imagenes/medidas3.jpg" width="25%"  id="medidas2"></a></div>
+</div>
+</div>
+
+
+</div>
+
+
+  </div>
+      <div data-role="footer" data-theme="a" data-position="fixed">
+        <h4>Aplicacion Tres, NCS</h4>
+      </div>
+     </div>
+     
+     
+<div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+      <h1>Contaminación en mi Entorno</h1>
+    </div>
+    <div data-role="content" align="left">
+      <div>
+        <h2> Medidas</h2>
+        <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/contaminacion3.jpg" alt="contaminacion3" title="contaminacion3" id="wows1_0"/></li>
+		<li><img src="data1/images/contaminacion4.jpg" alt="contaminacion4" title="contaminacion4" id="wows1_1"/></li>
+		<li><img src="data1/images/contaminacion5.jpg" alt="contaminacion5" title="contaminacion5" id="wows1_2"/></li>
+		<li><img src="data1/images/contaminacion6.jpg" alt="contaminacion6" title="contaminacion6" id="wows1_3"/></li>
+		<li><img src="data1/images/contaminacion7.jpg" alt="contaminacion7" title="contaminacion7" id="wows1_4"/></li>
+		<li><img src="data1/images/contaminacion11.jpg" alt="Contaminacion11" title="Contaminacion11" id="wows1_5"/></li>
+		<li><a href="http://wowslider.com"><img src="data1/images/contaminacion111.jpg" alt="wow slider" title="contaminacion111" id="wows1_6"/></a></li>
+		<li><img src="data1/images/contaminacion.jpg" alt="Contaminacion" title="Contaminacion" id="wows1_7"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="contaminacion3"><span><img src="data1/tooltips/contaminacion3.jpg" alt="contaminacion3"/>1</span></a>
+		<a href="#" title="contaminacion4"><span><img src="data1/tooltips/contaminacion4.jpg" alt="contaminacion4"/>2</span></a>
+		<a href="#" title="contaminacion5"><span><img src="data1/tooltips/contaminacion5.jpg" alt="contaminacion5"/>3</span></a>
+		<a href="#" title="contaminacion6"><span><img src="data1/tooltips/contaminacion6.jpg" alt="contaminacion6"/>4</span></a>
+		<a href="#" title="contaminacion7"><span><img src="data1/tooltips/contaminacion7.jpg" alt="contaminacion7"/>5</span></a>
+		<a href="#" title="Contaminacion11"><span><img src="data1/tooltips/contaminacion11.jpg" alt="Contaminacion11"/>6</span></a>
+		<a href="#" title="contaminacion111"><span><img src="data1/tooltips/contaminacion111.jpg" alt="contaminacion111"/>7</span></a>
+		<a href="#" title="Contaminacion"><span><img src="data1/tooltips/contaminacion.jpg" alt="Contaminacion"/>8</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">jquery carousel</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+        
+ <p> En mi entorno la contaminación es muy notable por lo cual debemos tomar varias medidas</p>
+ <p> no quemar basura </p>
+ <p> Reciclar </p>
+ <p> Crear conciencia </p>
+ 
+ <h2> paginas que ayudan a combatir la contaminación: </h2>
+ 
+ <p> Greenpeace: 
+El de proteger el equilibrio ecológico de todas partes del mundo, aunque son notables sus acciones por la defensa de la Antártida. </p>
+<a href="https://dona.greenpeace.org.mx/?gclid=Cj0KEQjwiI3HBRDv0q_qhqXZ-N4BEiQAOTiCHovDKz6e3b-slNY4uzYGJA9utO_da1AGte7NcNw_u_UaAsTV8P8HAQ">Asociación GreenPeace</a>
+
+ <p> WWF (World Wildlife Fund): Este Fondo Mundial Para la Naturaleza comenzó su andadura en 1961, en principio con el objetivo de defender  la vida silvestre de cada hábitat.  </p>
+<a href="https://www.worldwildlife.org/">Asociación GreenPeace</a>
+
+ <p> 
+The Nature Conservancy: como Greenpeace, se centran en acciones a gran escala que necesitan una solución inmediata. Fundada en 1951, cuenta ya con más de un millón de socios, gracias a la ayuda de los cuales se ha podido conservar más de 119 millones de acres de tierra y 5.000 millas de ríos en todo el mundo, incidiendo también en la importancia de la conservación marina. Por otro lado, esta ONG está implicada con la lucha contra el cambio climático.
+ </p>
+<a href="https://www.nature.org/">Asociación GreenPeace</a>
+
+
+ </div>
+     
+       </div>
+      <div data-role="footer" data-theme="a" data-position="fixed">
+        <h4>Aplicacion Tres, NCS</h4>
+      </div>
+     </div>
+     
+     
+     
+</body>
+</html>
